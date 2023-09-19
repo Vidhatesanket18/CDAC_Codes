@@ -1,35 +1,17 @@
-#include <iostream>
-using namespace std;
-
-int main() {
-    int rows;
-
-    cout << "Enter the number of rows for the pyramid: ";
-    cin >> rows;
-
-    for (int i = 1; i <= rows; i++) {  //2
-        for (int j = 1; j <= rows - i; j++) {  
-        
-        
-            cout << " ";
-        }
-        for (int k = 1; k <= 2 * i - 1; k++) {
-            cout << "*";
-        }
-        cout << endl;
-    }
-    for(int i=5; i>=1;i--){
-    	for(int j=5; j>=rows-i;j--){
-    		cout<<" ";
-		}
-		for(int k=5;k>=2*i-1;k--){
-			cout<<"*";
-		}
-		cout<<endl;
-	}
-
-
- 
-    return 0;
+#include<stdio.h>
+void swap(int*,int*);
+int main(){
+	int a=10,b=20;
+	swap(&a,&b);
+	
+	printf("address of a: %d", &a);
+	return 0;
 }
+void swap(int *p,int* q){
+	
 
+	printf("Value of *p : %d\n",*p);
+	printf("Value of *q : %d\n",*q);
+	printf("Address of *p : %d\n",p);
+
+}
