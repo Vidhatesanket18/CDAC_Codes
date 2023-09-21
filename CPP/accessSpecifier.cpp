@@ -5,7 +5,8 @@ using namespace std;
 class A{
 
 public:
-int a = 10;
+int a =           
+10;
   
 int c = 30;
   
